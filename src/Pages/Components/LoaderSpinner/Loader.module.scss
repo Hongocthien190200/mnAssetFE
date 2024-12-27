@@ -1,0 +1,7 @@
+.spinner-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Đưa spinner vào giữa trung tâm màn hình
+    z-index: 10000; // Đảm bảo spinner nằm phía trên overlay
+}

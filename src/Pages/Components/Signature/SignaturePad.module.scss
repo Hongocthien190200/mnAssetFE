@@ -1,0 +1,72 @@
+/* CSS for Signature Container */
+.signature-user {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkrgb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
+    overflow-y: auto;
+    /* Modern Minimalistic Button Styles */
+}
+
+.signature-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    .closeBtn {
+        display: flex;
+        justify-content: end;
+        font-size: 22px;
+        color: red;
+        margin: -8px -8px 4px 0px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        margin: 10px 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+        &:first-child {
+            background-color: red;
+        }
+    }
+
+    button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+
+    button:active {
+        transform: translateY(1px);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* CSS for Signature Canvas */
+.signature-canvas {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

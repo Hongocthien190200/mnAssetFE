@@ -1,0 +1,43 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600&display=swap');
+@import "./variables";
+
+
+* {
+    font-family: system-ui, "Segoe UI", 'Roboto', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    /* Độ rộng của thanh trượt */
+}
+
+::-webkit-scrollbar-track {
+    background: $primary-bg1;
+    /* Màu nền của track (phần đứng yên) */
+    border-radius: 10px;
+    /* Bo góc cho track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary-bg3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: $primary-bg4;
+}
+
+

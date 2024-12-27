@@ -1,0 +1,66 @@
+$primary-color1: #fbfcfd;
+$primary-color2: #df4adf;
+$primary-color3: #eeeeee;
+$primary-color5: #ffffff;
+$primary-color6: #fe9d18;
+$primary-color7: #5ab25e;
+$primary-color8: #eb4845;
+//màu nhận diện thương hiệu SOS
+$primary-color-th1: #0675bc;
+$primary-color-th2: #8ec543;
+$primary-color-th3: #f6ed24;
+$primary-color-th4: #ffffff;
+$primary-color-th5: #000000;
+// màu success - error
+$primary-color-nt1: #34a853;
+$primary-color-nt2: #ff0000;
+// nmàu chữ:
+$primary-color-text1: #444;
+$primary-color-text2: #333;
+$primary-color-text3: #aaa;
+//màu tiêu đề :
+$primary-color-tt1: #444;
+$primary-color-tt2: #333;
+$primary-color-tt3: #aaa;
+// màu nền:
+$primary-bg1: #f0f0f0;
+$primary-bg2: #ffffff;
+$primary-bg3: #d1d1d1;
+$primary-bg4: #bbbbbb;
+$primary-bg5: #868686;
+$primary-bg6: #29303b;
+
+//màu icon
+$primary-icon1: #acacac;
+$primary-icon2: #4481eb;
+// màu các nút:
+$primary-btn1: #5995fd;
+$primary-btn2: #4d84e2;
+
+$primary-color19: #083d7c;
+$primary-color21: #b8e3ff;
+$primary-color22: #1976d2;
+$primary-color23: #c6e6fb;
+$primary-color24: #0093fc;
+
+
+:root {
+    // --poppins: 'Poppins', sans-serif;
+    // --lato: 'Lato', sans-serif;
+
+    --light: #F9F9F9;
+    --blue: #3C91E6;
+    --light-blue: #CFE8FF;
+    --grey: #eee;
+    --dark-grey: #AAAAAA;
+    --dark: #342E37;
+    --red: #DB504A;
+    --yellow: #FFCE26;
+    --light-yellow: #FFF2C6;
+    --orange: #FD7238;
+    --light-orange: #FFE0D3;
+    --lightrgb: rgba(249, 249, 249, 0.5);
+    --greyrgb: rgba(238, 238, 238, 0.5);
+    --darkrgb: rgba(52, 46, 55, 0.5);
+
+}

@@ -1,0 +1,20 @@
+@import "../../../Components/GlobalStyles/variables";
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+}
+
+.breadcrumb li {
+    color: var(--dark);
+}
+
+.breadcrumb li a {
+    color: var(--dark-grey);
+}
+
+.breadcrumb li a.active {
+    color: var(--blue);
+    pointer-events: unset;
+}

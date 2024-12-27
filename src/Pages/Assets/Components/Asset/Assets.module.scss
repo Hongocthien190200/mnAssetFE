@@ -1,0 +1,150 @@
+.table-container {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed; // Đảm bảo chiều rộng cột cố định, không tự động co giãn
+    border: none;
+    font-size: 12px;
+    width: 100%;
+    /* Đảm bảo bảng rộng đầy đủ */
+    border-collapse: collapse;
+
+    thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        /* Đảm bảo thead luôn ở trên cùng */
+    }
+
+    tbody tr:first-child {
+    }
+
+    td {
+        &:not(:nth-child(2),:nth-child(15),:last-child) {
+            border: 1px solid var(--grey);
+            padding: 6px 8px;
+            text-align: left;
+            overflow: hidden; // Ẩn nội dung tràn ra ngoài
+            white-space: nowrap; // Không cho xuống dòng
+            text-overflow: ellipsis; // Thêm dấu ... khi nội dung quá dài
+            position: relative;
+        }
+
+        &:hover .tooltip {
+            display: block; // Chỉ hiển thị popup khi hover vào ô
+        }
+
+        .custom-file-input {
+            color: black;
+            position: relative;
+            padding: 6px 4px;
+            background-color: #f0f0f0;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .custom-file-input input[type="file"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0; // Ẩn input file
+        }
+    }
+
+    th {
+        padding: 10px 10px;
+        background-color: var(--light);
+        color: var(--dark);
+        
+    }
+    td:nth-child(15), td:last-child {
+        text-align: center;
+    }
+    th:last-child{
+            text-align: center;
+    }
+    tr:hover {
+        background-color: var(--light);
+    }
+
+
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        height: 3em;
+        padding: 2px 4px;
+        margin: 2px 0 2px -4px;
+        border: 1px solid var(--dark-grey);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .error-border {
+        border: 2px solid red !important;
+    }
+
+    textarea {
+        margin-top:6px ;
+        resize: none;
+        /* Vô hiệu hóa việc thay đổi kích thước */
+    }
+
+    button {
+        background-color: var(--blue);
+        color: white;
+        padding: 3px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    img {
+        width: 47px;
+        height: 27px;
+        border-radius: 1px;
+    }
+
+    .hiden {
+        display: none;
+    }
+}
+
+.tooltip,
+.tooltipImg {
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.tooltip {
+    transform: translateY(-12px);
+    padding: 10px;
+    width: 140px;
+    max-width: 140px;
+    white-space: normal; // Cho phép ngắt dòng trong popup
+    word-break: break-word;
+    text-align: justify;
+    font-size: 12px;
+    color: #333;
+}
+
+.tooltipImg {
+    transform: translateY(-12px);
+    padding: 4px;
+}
